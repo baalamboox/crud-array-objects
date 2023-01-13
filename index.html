@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/img/logos/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CRUD array with objects</title>
+        <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="row d-flex align-items-center mb-5">
+                <div class="col-md-8 py-4">
+                    <div class="text-center">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <img src="/img/logos/vite.svg" alt="vite" width="64" height="64" />
+                            <i class="fa-solid fa-plus fa-2x mx-4"></i>
+                            <img src="/img/logos/javascript.svg" alt="javascript" width="64" height="64" />
+                        </div>
+                        <h1 class="fw-light">CRUD (Array with objects)</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border rounded shadow p-4">
+                        <h2 class="mb-4 fs-4 fw-light text-center">My favorite animal</h2>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="animal_name" name="animal_name" placeholder="Name" />
+                            <label for="animal_name"><i class="fa-solid fa-paw me-2"></i>Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="animal_url_photo" name="animal_url_photo" placeholder="URL photo" />
+                            <label for="animal_url_photo"><i class="fa-solid fa-link me-2"></i>URL photo</label>
+                        </div>
+                        <span class="btn btn-primary d-block" id="save_animal"><i class="fa-solid fa-floppy-disk me-2"></i>Save animal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2><i class="fa-solid fa-shield-heart me-2"></i>My favorite animals</h2>
+                </div>
+            </div>
+            <div class="row row-cols-sm-2 row-cols-md-4 pt-5 g-3" id="animal_container">
+                <!-- <div class="col">
+                    <div class="card shadow">
+                        <img src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" class="card-img-top" alt="puppy">
+                        <div class="card-body">
+                          <h5 class="card-title text-center mb-4">Puppy</h5>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <small class="text-muted">12/01/2022</small>
+                            <div>
+                                <span class="btn btn-outline-warning" title="Edit"><i class="fa-solid fa-pen-to-square"></i></span>
+                                <span class="btn btn-outline-danger" title="Delete"><i class="fa-solid fa-trash"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
